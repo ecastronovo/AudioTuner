@@ -54,6 +54,7 @@
                     </view>
                     <connections>
                         <outlet property="recordButton" destination="FIS-PP-yC5" id="F6c-sR-dvK"/>
+                        <outlet property="recordingLabel" destination="OJN-gR-rbe" id="nxx-qZ-7rp"/>
                         <outlet property="stopRecordingButton" destination="FVr-rU-zO8" id="wOy-eN-uhq"/>
                     </connections>
                 </viewController>
