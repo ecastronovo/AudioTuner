@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RecorderViewController.swift
 //  AudioTuner
 //
 //  Created by Eric Castronovo on 12/6/20.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class RecorderViewController: UIViewController {
 
     @IBOutlet weak var recordButton: UIButton!
     @IBOutlet weak var stopRecordingButton: UIButton!
