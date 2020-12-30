@@ -8,11 +8,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Recording View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AudioTuner" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="BYZ-38-t0r" customClass="RecordingViewController" customModule="AudioTuner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="RecordingViewController">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -32,7 +32,6 @@
                                 <state key="normal" image="Stop"/>
                                 <connections>
                                     <action selector="stopRecording:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tAb-P5-xF1"/>
-                                    <segue destination="rCF-aa-0Na" kind="show" id="oVU-Hr-ALj"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJN-gR-rbe">
@@ -58,6 +57,7 @@
                         <outlet property="recordButton" destination="FIS-PP-yC5" id="F6c-sR-dvK"/>
                         <outlet property="recordingLabel" destination="OJN-gR-rbe" id="nxx-qZ-7rp"/>
                         <outlet property="stopRecordingButton" destination="FVr-rU-zO8" id="wOy-eN-uhq"/>
+                        <segue destination="rCF-aa-0Na" kind="show" identifier="stopRecording" id="93s-k6-fFU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
