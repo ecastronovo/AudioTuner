@@ -52,6 +52,7 @@ class RecordingViewController: UIViewController, AVAudioRecorderDelegate{
     
     @IBAction func stopRecording(_ sender: Any) {
         print("Stop Recording")
+        audioRecorder.delegate = self
         audioRecorder.stop()
         stopRecordingButton.isEnabled = false
         recordButton.isEnabled = true
