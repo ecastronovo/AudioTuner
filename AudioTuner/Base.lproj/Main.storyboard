@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Emv-8D-UH2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Emv-8D-UH2">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -89,8 +89,24 @@
                     <view key="view" contentMode="scaleToFill" id="q9V-pX-3qO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="7zo-QT-wnd">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="lXa-0o-vpR">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="a5d-vH-s5t"/>
-                        <color key="backgroundColor" systemColor="systemGrayColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7zo-QT-wnd" firstAttribute="leading" secondItem="a5d-vH-s5t" secondAttribute="leading" id="02b-Is-ZLs"/>
+                            <constraint firstItem="a5d-vH-s5t" firstAttribute="bottom" secondItem="7zo-QT-wnd" secondAttribute="bottom" id="81t-P4-OjP"/>
+                            <constraint firstItem="a5d-vH-s5t" firstAttribute="trailing" secondItem="7zo-QT-wnd" secondAttribute="trailing" id="e5H-T3-pxY"/>
+                            <constraint firstItem="7zo-QT-wnd" firstAttribute="top" secondItem="a5d-vH-s5t" secondAttribute="top" id="k3d-ZG-Qqq"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ru8-Ss-aWc"/>
                 </viewController>
@@ -104,9 +120,6 @@
         <image name="Stop" width="155" height="155"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
